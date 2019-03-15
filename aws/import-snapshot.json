@@ -1,8 +1,8 @@
 {
     "Description": "pfSense CE 2.4.2",
-    "Format": "FORMAT_PLACEHODLER",
+    "Format": "vmdk",
     "UserBucket": {
-        "S3Bucket": "BUCKET_PLACEHODLER",
-        "S3Key": "IMAGE_PLACEHODLER"
+        "S3Bucket": "ec2-vm-import-3284a153f2ed",
+        "S3Key": "pfSense-CE-2.4.2_20190314_074944-disk001.vmdk"
     }
 }
