@@ -11,9 +11,9 @@ There are areas in the repository which should be considered as a draft, not fin
 Unlicense
 
 # Instructions
-* Download a copy of the pfSense image `pfSense-CE-2.4.2-RELEASE-amd64.iso` to the `input/` directory and then run `packer build pfsenese-<qemu|vbox>.json`.
+* Download a copy of the pfSense image `pfSense-CE-2.4.2-RELEASE-amd64.iso` to the `input/` directory and then run `packer build pfsenese-<qemu|vbox>.json`. aka for vbox run `packer build pfsense-vbox.json`
 * `remote-qemu-vnc.sh|remote-vbox-rdp.sh` can be used to view the build process. Do not manually press keys during viewing.
-* Created images are placed in the `output-<qemu|vbox>/` directory.
+* Created images are placed in the `output-<qemu|vbox>/` directory. aka for vbox `output-vbox/`
 * `aws/import-role/import-role.sh` contains the required roles for the AWS import processes. Policies need to be modified to match your AWS account.* Specifically, you will need to make a security role in AWS named `vmimport`.  You will need to give this role `VMImportExportRoleForAWSConnector` Policy access and may even need to give the role temporary `AdministratorAccess`.  You will want it to start with a "TrustRelationship" for EC2. Then you will go in and manually edit the trust relationship to look like this:
 ```json
 {
