@@ -33,7 +33,9 @@ Unlicense
     }
   ]
 }
-``` If you don't do this you will get an error similar to this: `The service role <vmimport> does not exist or does not have sufficient permissions for the service to continue`
+```
+
+If you don't do this you will get an error similar to this: `The service role <vmimport> does not exist or does not have sufficient permissions for the service to continue`
 * After the import is complete you can remove access.
 * `aws/ec2-snapshot.sh` is prepeared for importing the created image to AWS. Need to be adjusted to meet your configuration.
 * Once you have created the snapshot in AWS, you can then convert the snapshot to an AMI and use it to create EC2 instances.
